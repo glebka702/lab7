@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WikiApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>WikiApp</h1>
+
+<section>
+    <h2>Категории</h2>
+    <button onclick="loadCategories()">Загрузить категории</button>
+    <ul id="categoryList"></ul>
+</section>
+
+<section>
+    <h2>Добавить Wiki-страницу</h2>
+    <input type="text" id="wikiTerm" placeholder="Введите термин">
+    <input type="number" id="categoryId" placeholder="ID категории">
+    <button onclick="searchAndSave()">Искать и сохранить</button>
+</section>
+
+<section>
+    <h2>Wiki-страницы по категории</h2>
+    <input type="number" id="searchCategoryId" placeholder="ID категории">
+    <button onclick="loadWikiByCategory()">Загрузить</button>
+    <ul id="wikiList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
